@@ -21,7 +21,7 @@ async function Execute(target, ig, komen, latest_id)
             {
                 try{
                   const start = await ig.media.comment({mediaId: latest_id, text: komen})
-                  console.log(`[ ${moment().format('HH:mm:ss')} ] [SUKSES KOMEN @${target}] [${komen}]`)
+                  console.log(`[ ${moment().format('HH:mm:ss')} ] [OK SUKSES KOMEN @${target}] [${komen}]`)
                   
                 }catch(err)
                 {
@@ -29,7 +29,7 @@ async function Execute(target, ig, komen, latest_id)
                 }
                 fs.writeFileSync('./target/' + target + '.txt', latest_id);
             }else{
-                console.log(`[ ${moment().format('HH:mm:ss')} ] TIDAK MENEMUKAN POST BARU`, target)
+                console.log(`[ ${moment().format('HH:mm:ss')} ] GA ADA POST BARU COK`, target)
             }
             
         } else {
@@ -45,7 +45,7 @@ async function Execute(target, ig, komen, latest_id)
     let enabled = 0 ;
     let checking = 0;
     let starting = 0;
-    console.log(`FRIST COMMENT CREATED BY AREL TIYAN\nSGB TEAM 2020\nCEK komen.txt DENGAN PEMISAH |\n`)
+    console.log(`FRIST COMMENT CREATED BY ME\nNO TEAM 2020\nCEK komen.txt DENGAN PEMISAH |\n`)
     const user_name   = readlineSync.question("Username : ")
     const pass_word   = readlineSync.question("Password : ")
     var tar_get       = readlineSync.question("Target (Pakai , Jika lebih dari 1) : ").split(',')
