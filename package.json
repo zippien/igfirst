@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/areltiyan/ig-firstcomment.git"
+    "url": "git+https://github.com/zippien/igfirst.git"
   },
-  "author": "AREL TIYAN",
+  "author": "Zippien",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/areltiyan/ig-firstcomment/issues"
+    "url": "https://github.com/zippien/igfirst/issues"
   },
-  "homepage": "https://github.com/areltiyan/ig-firstcomment#readme"
+  "homepage": "https://github.com/zippien/igfirst#readme"
 }
